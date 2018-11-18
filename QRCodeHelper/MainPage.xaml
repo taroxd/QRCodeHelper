@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="QRCodeHelper.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:QRCodeHelper"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" AllowDrop="True" Drop="Grid_Drop" DragOver="Grid_DragOver">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image x:Name="QRCodeImage" Visibility="Visible" Stretch="None" />
+        <TextBox x:Name="QRTextBox" 
+                 TextWrapping="Wrap" 
+                 Text="QRCode Helper"
+                 ScrollViewer.VerticalScrollBarVisibility="Auto"
+                 AcceptsReturn="True" 
+                 TextChanged="QRTextBox_TextChanged"
+                 Grid.Column="1" 
+                 HorizontalContentAlignment="Stretch"
+                 SelectionLength="13"
+                 Margin="30,30,30,30" 
+                 VerticalContentAlignment="Stretch" />
+
+        <StackPanel Grid.Column="0" Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,30" Grid.ColumnSpan="2">
+            <TextBox x:Name="SizeTextBox" Text="320" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Right" InputScope="Number" TextChanged="SizeTextBox_TextChanged" IsSpellCheckEnabled="False" MaxLength="4" Header="Size" MinWidth="0" MinHeight="0" Margin="10,0"/>
+            <Button x:Name="SaveButton" FontFamily="Segoe MDL2 Assets" Content="&#xE74E;" FontSize="36" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" Click="SaveButton_Click" />
+            <Button x:Name="LoadButton" FontFamily="Segoe MDL2 Assets" Content="&#xE8E5;" FontSize="36" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" Click="LoadButton_Click"/>
+            <Button x:Name="PasteButton" FontFamily="Segoe MDL2 Assets" Content="&#xE77F;" FontSize="36" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" Click="PasteButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>
+
