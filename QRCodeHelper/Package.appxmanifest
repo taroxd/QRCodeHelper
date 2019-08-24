@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="32833taroxd.QRCodeHelper" Publisher="CN=C8495EA9-D8FD-4F54-B8D8-1E1C7C9F7A11" Version="1.2.4.0" />
+  <Identity Name="32833taroxd.QRCodeHelper" Publisher="CN=C8495EA9-D8FD-4F54-B8D8-1E1C7C9F7A11" Version="1.2.5.0" />
   <mp:PhoneIdentity PhoneProductId="d41ea6b4-36b3-41eb-ab4e-697d32d7621b" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>QRCode Helper</DisplayName>
